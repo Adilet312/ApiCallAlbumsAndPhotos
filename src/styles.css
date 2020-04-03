@@ -1,3 +1,35 @@
 body {
-  background-color: #7FDBFF;
+    /*background-image: url(./img/background.jpg);
+    /* background-attachment: fixed;
+    background-size: cover; */
+}
+button{
+  margin-left: 40%;
+  margin-top: 20px;
+}
+#js-albums{
+  width:373px;
+  border:1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  opacity:0.95;
+}
+th,td{
+  padding: 10px;
+  text-align: center;
+}
+th{
+  background-color: #a70000;
+  color:white;
+}
+tr:nth-child(even){
+  background-color: #e8e8e8;
+}
+tr:nth-child(odd){
+  background-color: white;
 }

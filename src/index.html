@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script type="text/javascript" src="bundle.js"></script> -->
     <title>Ping Pong</title>
   </head>
   <body>
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number">
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="solution"></ul>
+    <button type="button" id="js-albums" >Get all albums</button>
+    <table id ='tableId' align='center'>
+      <tr>
+        <td colspan="3"><h1>Albums</h1></td>
+      </tr>
+      <tr>
+        <th>ID</th>
+        <th>User Id</th>
+        <th>Title</th>
+      </tr>
+    </table>
+    <ul id="albums"></ul>
   </body>
 </html>

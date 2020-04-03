@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+//const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -18,10 +19,13 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Ping Pong',
+      title: 'SeytechHomework',
       template: './src/index.html',
       inject: 'body'
-    })
+    }),
+    // new CopyWebpackPlugin([
+    //   {from: 'src/img', to: 'img'},
+    // ]),
   ],
   module: {
     rules: [
@@ -39,7 +43,21 @@ module.exports = {
             /spec/
           ],
         loader: "eslint-loader"
-      }
+      },
+   //    {
+   //   test: /\.(png|jpg)$/,
+   //   use: [
+   //     {
+   //       loader: 'file-loader',
+   //       options:{
+   //         name: '[name].[ext]',
+   //         outputPath: 'img/',
+   //         publicPath: 'img/'
+   //       }
+   //     }
+   //   ],
+   // },
     ]
   }
+
 };
