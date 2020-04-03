@@ -4,17 +4,26 @@
     <title>Ping Pong</title>
   </head>
   <body>
+
+    <div class="container">
     <button type="button" id="js-albums" >Get all albums</button>
-    <table id ='tableId' align='center'>
-      <tr>
-        <td colspan="3"><h1>Albums</h1></td>
-      </tr>
-      <tr>
-        <th>ID</th>
-        <th>User Id</th>
-        <th>Title</th>
-      </tr>
-    </table>
-    <ul id="albums"></ul>
+    <input type="text" id="inputId" placeholder='Enter album Id' />
+    <button type="submit"  id='js-photos'name="button">Get photos by Id</button>
+ </div>
+ <div class='scroll-h'>
+   <ul id="photos"></ul>
+ </div>
+ <table id ='tableId' align='center'>
+    <tr>
+      <td colspan="3"><h1>Albums</h1></td>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <th>User Id</th>
+      <th>Title</th>
+    </tr>
+ </table>
+
+
   </body>
 </html>
