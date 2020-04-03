@@ -12,7 +12,7 @@ _An Api application and its purpose is to get all albums and get photos based on
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+### Instruction
 
 * Node js in your local machine
 * git clone https://github.com/Adilet312/ApiCallAlbumsAndPhotos.git
